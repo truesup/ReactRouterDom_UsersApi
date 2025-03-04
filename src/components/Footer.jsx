@@ -1,7 +1,15 @@
 const Footer = () => {
   return (
     <>
-      <p>Thanks to open API</p>
+      <p className="footerText">
+        Thanks to open API -{' '}
+        <a
+          className="footerAnchor"
+          href="https://jsonplaceholder.typicode.com"
+          target="blank">
+          JSON Placeholder
+        </a>
+      </p>
     </>
   )
 }
