@@ -1,8 +1,7 @@
-import { useLoaderData } from 'react-router-dom'
+import { Link, useLoaderData } from 'react-router-dom'
 
 const UsersPage = () => {
   const usersList = useLoaderData()
-  console.log(usersList)
 
   return (
     <div className="usersListContainer">
@@ -11,6 +10,9 @@ const UsersPage = () => {
           <p>Name: {user.name}</p>
           <p>Email: {user.email}</p>
           <p>City: {user.address.city}</p>
+          <Link className="userAnchor" to={`/users/${user.id}`}>
+            View Details
+          </Link>
         </div>
       ))}
     </div>

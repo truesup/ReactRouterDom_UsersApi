@@ -180,7 +180,7 @@ body {
 .userInfoSubstrate {
   text-align: center;
   font-size: 18px;
-  padding: 32px 40px;
+  padding: 20px 28px;
   background-color: var(--color-dark);
   color: var(--color-white);
   border-radius: 8px;
@@ -195,4 +195,25 @@ body {
 }
 .userInfoSubstrate p {
   margin: 0;
+}
+.userAnchor {
+  margin-top: 8px;
+  color: var(--color-orange);
+}
+.userInfoSubstrate:hover .userAnchor {
+  color: var(--color-white);
+}
+.detailsSubstrate * {
+  margin: 0;
+}
+.detailsSubstrate {
+  padding: 20px 40px;
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  border-radius: 8px;
 }
