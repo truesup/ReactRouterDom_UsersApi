@@ -129,11 +129,13 @@ body {
   transform: translate(-50%, -50%);
 }
 .main {
+  padding: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100dvw;
   height: calc(100dvh - 136px);
+  overflow: scroll;
 }
 .footer {
   width: 100dvw;
@@ -169,4 +171,28 @@ body {
 }
 .footerAnchor:hover {
   color: var(--color-orange);
+}
+.usersListContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.userInfoSubstrate {
+  text-align: center;
+  font-size: 18px;
+  padding: 32px 40px;
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  border-radius: 8px;
+  box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.userInfoSubstrate:hover {
+  scale: 1.01;
+  background-color: var(--color-orange);
+  color: var(--color-black);
+}
+.userInfoSubstrate p {
+  margin: 0;
 }
