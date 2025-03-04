@@ -1,7 +1,13 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import Button from './UI/Button'
 
 const Header = () => {
+  const navigate = useNavigate()
+
+  const handleGettingRandomUser = () => {
+    navigate(`users/${Math.floor(Math.random() * 9) + 1}`)
+  }
+
   return (
     <>
       <a href="/" className="headerLogo">
@@ -17,7 +23,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <Button>Get random user</Button>
+      <Button onClick={handleGettingRandomUser}>Get random user</Button>
     </>
   )
 }
